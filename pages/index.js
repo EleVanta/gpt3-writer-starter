@@ -39,31 +39,37 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Make Delicious Meals with a Click!</h1>
+            <h1>Make Fire Meals with a Click!</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Generate your recipe using AI based on Type of Meal, Diet, and Mood</h2>
+            <h2>Generate your recipe using AI, based on Type of Meal, Diet, and Mood</h2>
           </div>
-          <div className="subtitle">
-            <h3>Example: Breakfast, Vegan, Happy</h3>
+          <div calssName="subtitle">
+            <h3>Meal Types:</h3> <p>Breakfast, Lunch, Dinner, Snack, etc. </p>
+            <h3>Diet Types:</h3> <p>No diet, Omnivore, Vegan, Vegetarian, Pescaterian, Carnivore, Keto, Raw, etc.</p>
+            <h3>Mood Types:</h3> <p> Happy, Sad, Angry, Somber, Surprised, Melancholy, Irritated, etc.</p>
           </div>
         </div>
       </div>
       <div className="prompt-container">
         <textarea
           className="prompt-box"
-          placeholder="start typing here"
+          placeholder="Example: Breakfast, Vegan, Happy"
           value={userInput}
           onChange={onUserChangedText}
         />;
-        <div className="prompt-buttons">
-    <a className="generate-button" onClick={callGenerateEndpoint}>
+  <div className="prompt-buttons">
+    <a 
+      className={isGenerating ? 'generate-button loading' : 'generate button'} 
+      onClick={callGenerateEndpoint}
+    >
       <div className="generate">
-        <p>Generate</p>
+        {isGenerating ? <span class="loader"></span> : <p>Generate</p>}
       </div>
     </a>
+  </div>
     </div>
-    </div>
+
     {apiOutput && (
       <div className="output">
         <div className="output-header-container">
@@ -75,7 +81,6 @@ const callGenerateEndpoint = async () => {
           <p>{apiOutput}</p>
          </div> 
       </div>    
-
     )}
       <div className="badge-container grow">
         <a
@@ -89,7 +94,7 @@ const callGenerateEndpoint = async () => {
           </div>
         </a>
       </div>
-    </div>
+  </div>
   );
 };
 
