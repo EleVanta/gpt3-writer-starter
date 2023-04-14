@@ -39,7 +39,7 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Make Fire Meals with a Click!</h1>
+            <h1>ChefMate</h1>
           </div>
           <div className="header-subtitle">
             <h2>Generate your recipe using AI, based on Type of Meal, Diet, and Mood</h2>
@@ -90,7 +90,7 @@ const callGenerateEndpoint = async () => {
         >
           <div className="badge">
             <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <p>ChefMate</p>
           </div>
         </a>
       </div>
