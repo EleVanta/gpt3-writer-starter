@@ -42,19 +42,19 @@ const callGenerateEndpoint = async () => {
             <h1>ChefMate</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Generate your recipe using AI, based on Type of Meal, Diet, and Mood</h2>
+            <h2>Get step by step instructions for tasty meals using AI, based on Type of Meal, Diet, and Time to cook!</h2>
           </div>
           <div calssName="subtitle">
             <h3>Meal Types:</h3> <p>Breakfast, Lunch, Dinner, Snack, etc. </p>
             <h3>Diet Types:</h3> <p>No diet, Omnivore, Vegan, Vegetarian, Pescaterian, Carnivore, Keto, Raw, etc.</p>
-            <h3>Mood Types:</h3> <p> Happy, Sad, Angry, Somber, Surprised, Melancholy, Irritated, etc.</p>
+            <h3>Time:</h3> <p> 15mins, 30mins, 1 Hour, etc. </p>
           </div>
         </div>
       </div>
       <div className="prompt-container">
         <textarea
           className="prompt-box"
-          placeholder="Example: Breakfast, Vegan, Happy"
+          placeholder="Example: Breakfast, Vegan, 30mins"
           value={userInput}
           onChange={onUserChangedText}
         />;

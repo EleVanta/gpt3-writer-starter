@@ -6,7 +6,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = `Create a meal based on type of meal, diet, and mood:
+const basePromptPrefix = `Create step by step instructions and recipe meal based on type of meal, diet, and time given:
 `
 const generateAction = async (req, res) => {
   // Run first prompt
