@@ -22,6 +22,7 @@ body {
 .container {
     display: flex;
     place-content: center flex-start;
+    justify-content: center;
     align-items: center;
     flex: 0 0 auto;
     flex-flow: column nowrap;
