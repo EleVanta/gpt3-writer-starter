@@ -92,7 +92,7 @@ body {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column nowrap;
-    gap: 10px;
+    gap: 6px;
     height: 150px;
     overflow: hidden;
     padding: 20px;
@@ -148,7 +148,7 @@ textarea {
 }
 
 .key-stroke p {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(157, 156, 156, 0.75);
     flex: 0 0 auto;
     height: auto;
     position: relative;
@@ -177,11 +177,11 @@ textarea {
     display: center;
     flex: 0 0 auto;
     flex-flow: column nowrap;
-    gap: 10px;
+    gap: 40px;
     height: min-content;
     overflow: hidden;
     padding: 16px 24px;
-    position: relative;
+    position: center;
     text-decoration: none;
     width: min-content;
     will-change: transform;
