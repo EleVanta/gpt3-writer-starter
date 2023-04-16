@@ -182,7 +182,6 @@ textarea {
     height: min-content;
     overflow: hidden;
     padding: 16px 24px;
-    position: center;
     text-decoration: none;
     width: min-content;
     will-change: transform;
@@ -191,7 +190,7 @@ textarea {
 
 .generate {
     outline: none;
-    display: center;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
