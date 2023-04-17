@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import ChefmateLogo from '../assets/chefmate-logo';
+import ChefmateLogo from '../assets/chefmate-logo.png';
 
 const Home = () => {
   const [userInput, setUserInput] = useState('');
