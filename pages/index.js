@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import ChefmateLogo from '../assets/chefmate-logo';
 
 const Home = () => {
   const [userInput, setUserInput] = useState('');
@@ -89,8 +89,8 @@ const callGenerateEndpoint = async () => {
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>ChefMate</p>
+            <Image src={ChefmateLogo} alt="Chefmate logo" />
+          
           </div>
         </a>
       </div>
