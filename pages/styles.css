@@ -29,7 +29,7 @@ body {
     height: fit-content;
     max-width: 975px;
     overflow: auto;
-    padding: 50px;
+    padding: 20px;
     position: relative;
     width: auto;
     gap: 64px;
@@ -72,7 +72,7 @@ body {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column nowrap;
-    gap: 12px;
+    gap: 6px;
     height: min-content;
     padding: 0px;
     width: min-content;
@@ -93,7 +93,7 @@ body {
     flex: 0 0 auto;
     flex-flow: column nowrap;
     gap: 6px;
-    height: 60px;
+    height: 50px;
     overflow: hidden;
     padding: 20px;
     position: relative;
