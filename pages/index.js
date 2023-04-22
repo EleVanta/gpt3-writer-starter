@@ -39,10 +39,10 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>ChefMate</h1>
+            <h1><Image src={ChefmateLogo} alt="Chefmate logo" /></h1>
           </div>
           <div className="header-subtitle">
-            <h2>Get step by step instructions for tasty meals using AI, based on Type of Meal, Diet, and Time to cook!</h2>
+            <h2>Get step by step instructions for tasty meals, based on Type of Meal, Diet, and Time to cook!</h2>
           </div>
           <div calssName="subtitle">
             <h3>Meal Types:</h3> <p>Breakfast, Lunch, Dinner, Snack, etc. </p>
@@ -82,18 +82,6 @@ const callGenerateEndpoint = async () => {
          </div> 
       </div>    
     )}
-      <div className="badge-container grow">
-        <a
-          href="https://buildspace.so/builds/ai-writer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="badge">
-            <Image src={ChefmateLogo} alt="Chefmate logo" />
-          
-          </div>
-        </a>
-      </div>
   </div>
   );
 };
