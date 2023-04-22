@@ -39,7 +39,7 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1><Image src={ChefmateLogo} alt="Chefmate logo" width={100} height={50}/></h1>
+            <h1><Image src={ChefmateLogo} alt="Chefmate logo" width={300} height={200}/></h1>
           </div>
           <div className="header-subtitle">
             <h2>Get step by step instructions for tasty meals, based on Type of Meal, Diet, and Time to cook!</h2>
