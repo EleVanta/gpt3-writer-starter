@@ -51,7 +51,7 @@ body {
 .header-title h1 {
     width: 100%;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 30px;
     letter-spacing: -2px;
     line-height: 1.2em;
     text-align: center;
@@ -93,7 +93,7 @@ body {
     flex: 0 0 auto;
     flex-flow: column nowrap;
     gap: 6px;
-    height: 150px;
+    height: 60px;
     overflow: hidden;
     padding: 20px;
     position: relative;
@@ -244,8 +244,8 @@ textarea {
 }
 
 .badge img {
-    width: 100px;
-    height: 40px;
+    width: 40px;
+    height: 10px;
     image-rendering: auto;
     flex-shrink: 0;
     fill: black;
