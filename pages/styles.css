@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Gills Sans', Verdana;
 }
 
 .root {
@@ -114,7 +114,7 @@ body {
 }
 
 textarea {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', Verdana;
 }
 
 
@@ -169,36 +169,46 @@ textarea {
     color: rgba(157, 156, 156, 0.75)
 }
 
+
 .generate-button {
-    place-content: center;
-    align-items: flex center;
-    background-color: rgb(255, 79, 18);
-    border-radius: 100px;
+    display: flex;
     justify-content: center;
-    display: center;
-    flex: 0 0 auto;
-    flex-flow: column nowrap;
-    gap: 60px;
+    align-items: center;
+    background-color: rgb(255, 79, 18);
+    border: 2px solid #898686; /* Add border here */
+    border-radius: 100px;
     height: min-content;
     overflow: hidden;
     padding: 16px 24px;
     text-decoration: none;
-    width: min-content;
-    will-change: transform;
     cursor: pointer;
-}
-
-.generate {
-    outline: none;
+  }
+  
+  .generate {
     display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    transform: none;
-}
-
-.generate p {
-    color: rgb(255, 0, 0);
+    justify-content: center;
+    align-items: center;
+    color: #ff0000;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 32px;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #e8e8e8;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .generate p {
     margin: 0;
+  }
+.generate:hover {
+	background:linear-gradient(to bottom, #6b6a6a 5%, #f9f9f9 100%);
+	background-color:#a7a6a6;
+}
+.generate:active {
+	position:relative;
+	top:1px;
 }
 
 .loading {
@@ -303,7 +313,7 @@ textarea {
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #9d9d9d;
+    color: #8b8989;
     text-decoration: none;
     text-transform: none;
     margin: 0;
@@ -387,6 +397,7 @@ textarea {
     .prompt-box {
         width: 100%;
     }
+
 }
 
 

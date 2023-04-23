@@ -39,10 +39,10 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1><Image src={ChefmateLogo} alt="Chefmate logo" width={400} height={115}/></h1>
+            <h1><Image src={ChefmateLogo} alt="Chefmate logo" width={175} height={100}/></h1>
           </div>
           <div className="header-subtitle">
-            <h2>Get step by step instructions for tasty meals, based on Type of Meal, Diet, and Time to cook!</h2>
+            <h2>Get step by step instructions for tasty meals based on Meal Type, Diet, and available time!</h2>
           </div>
           <div calssName="subtitle">
             <h3>Meal Types:</h3> <p>Breakfast, Lunch, Dinner, Snack, etc. </p>
@@ -64,7 +64,7 @@ const callGenerateEndpoint = async () => {
       onClick={callGenerateEndpoint}
     >
       <div className="generate">
-        {isGenerating ? <span class="loader"></span> : <p>Generate</p>}
+        {isGenerating ? <span class="loader"></span> : <p>Get Recipe!</p>}
       </div>
     </a>
   </div>
