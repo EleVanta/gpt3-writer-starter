@@ -6,7 +6,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = `Create step by step instructions and recipe meal based on type of meal, diet, and time given:
+const basePromptPrefix = `You are a world renowned chef teaching amatures how to elevate their cooking skills. Create the most delicious, flavorful recipe based on type of meal, diet, and time given:
 `
 const generateAction = async (req, res) => {
   // Run first prompt
@@ -24,7 +24,7 @@ const generateAction = async (req, res) => {
   // I build Prompt #2.
   const secondPrompt = 
   `
-  Create a delicious recipe based on the meal below and provide the length of time it will take to make!
+  Provide step by step detailed directions on how to make the recipe given and provide the length of time it will take to make!
 
   ${basePromptOutput.text}
 
